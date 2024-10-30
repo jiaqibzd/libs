@@ -22,13 +22,13 @@ jobs:
         shell: bash
         run: |
           modules=($CLONE_MODULES)
-          git config --global user.name "robot"
-          git config --global user.email "libo_go@163.com"
-          git clone --recursive -b Lhz git@gitee.com:shubci/libs.git
+          git config --global user.name "jiaqi"
+          git config --global user.email "3340487375@qq.com"
+          git clone --recursive -b jiaqi git@gitee.com:shubci/libs.git
           mkdir module
           cd module
-          git clone --recursive -b Lhz git@gitee.com:shubci/cjson.git
-          git clone --recursive -b Lhz git@gitee.com:shubci/osal.git
+          git clone --recursive -b jiaqi git@gitee.com:shubci/cjson.git
+          git clone --recursive -b jiaqi git@gitee.com:shubci/osal.git
           for modulename in "${modules[@]}"; do
               git clone --recursive -b master git@gitee.com:shubci/${modulename%/*}.git
           done
